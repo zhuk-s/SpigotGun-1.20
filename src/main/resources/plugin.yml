@@ -1,0 +1,4 @@
+name: SpigotGuns
+version: '1.0'
+main: me.zhuk.spigotGuns.Plugin
+api-version: '1.21'
