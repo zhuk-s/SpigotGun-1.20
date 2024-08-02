@@ -17,5 +17,12 @@ public class ArmsHandler {
         ItemMeta meta = gunItem.getItemMeta();
 
         meta.getPersistentDataContainer().set(NamespacedKey.fromString("gun_name"), PersistentDataType.STRING, gun.name());
+        meta.getPersistentDataContainer().set(NamespacedKey.fromString("bullets_num"), PersistentDataType.INTEGER, gun.getBulletsNum());
+
+        meta.setDisplayName(gun.getName());
+
+        gunItem.setItemMeta(meta);
+
+        player.getInventory().addItem(gunItem);
     }
 }
